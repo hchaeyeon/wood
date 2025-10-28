@@ -227,7 +227,7 @@ AI 기반 시스템에서는:
   ```
   I want to request an overdraft of 1000 EURO for my account IBAN DE89320895326389021994
   ```
-- Channels > Show agent 를 disable 처리 함
+- Channels > Home agent 를 disable 처리 함
 - **Deploy** 버튼을 클릭하여 에이전트 배포
 
 ![Deploy](./backoffice_ag_imgs/i10.png)
@@ -361,9 +361,9 @@ AI 기반 시스템에서는:
   ```
 
 - 이 에이전트는 **GFM Bank Orchestrator Agent**에 의해 호출되는 협업 에이전트이므로, 채팅 홈 화면에서 직접 사용하도록 활성화하지 않습니다.  
-**Show agent** 기능을 비활성화합니다.
+**Home agent** 기능을 비활성화합니다.
 
-![Show agent toggle](./teller_ag_imgs/i14.png)
+![Home agent toggle](./teller_ag_imgs/i14.png)
 
 
 
@@ -571,7 +571,7 @@ What is the balance of my account IBAN DE89320895326389021994
     - 복잡한 질문: 쉬운 언어, 비유, 단계별 설명 활용  
 
   ```
-- 이 에이전트는 협업 에이전트로서 GFM Bank Orchestrator에 의해 호출될 예정이므로, 채팅 홈페이지에서 직접 대화할 수 없도록 **Show agent** 토글을 비활성화합니다.
+- 이 에이전트는 협업 에이전트로서 GFM Bank Orchestrator에 의해 호출될 예정이므로, 채팅 홈페이지에서 직접 대화할 수 없도록 **Home agent** 토글을 비활성화합니다.
 
   ![Disable toggle](./prod_info_ag_imgs/i5.png)
 

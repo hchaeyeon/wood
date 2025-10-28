@@ -203,7 +203,7 @@ Dock status data:
 ```
 
 
-마지막으로 `Show agent` 체크박스를 해제합니다.  
+마지막으로 `Home agent` 체크박스를 해제합니다.  
 이 옵션은 메인 채팅 창에서 에이전트 노출 여부를 결정합니다.  
 현재는 최상위 에이전트만 노출할 것입니다.
 
@@ -322,7 +322,7 @@ Surplus data:
 ```
 
 
-Dock Status Agent와 마찬가지로 `Show agent` 체크박스를 해제합니다.
+Dock Status Agent와 마찬가지로 `Home agent` 체크박스를 해제합니다.
 
 ![alt text](images/image12.png)
 
@@ -442,7 +442,7 @@ Warehouse Management
 ```
 
 
-`Show agent` 체크박스를 해제합니다.  
+`Home agent` 체크박스를 해제합니다.  
 Preview 창에서 새 에이전트를 테스트할 수 있습니다. 마케팅팀에게 SKU: 8932464599의 10개 재고에 대한 알림 이메일을 작성해 달라는 요청할 수 있습니다.   
 예를 들어 다음을 입력합니다:
 ```
@@ -567,7 +567,7 @@ Reasoning:
 
 ---
 
-테스트 전에, 화면 하단으로 스크롤하여 `Show agent` 체크박스가 체크되어 있는지 확인합니다.  
+테스트 전에, 화면 하단으로 스크롤하여 `Home agent` 체크박스가 체크되어 있는지 확인합니다.  
 이 에이전트는 최종 사용자가 메인 채팅 창에서 사용할 수 있어야 합니다.
 
 ![alt text](images/image25.png)
@@ -609,7 +609,7 @@ Please create a notification email ...
 ![alt text](images/image28.png)
 
 결과에 만족하면, 이전 에이전트와 마찬가지로 `Deploy` 버튼을 클릭하여 에이전트를 배포합니다.  
-`Show agent` 옵션을 체크했으므로, 홈 화면에서 해당 에이전트를 확인할 수 있습니다.  
+`Home agent` 옵션을 체크했으므로, 홈 화면에서 해당 에이전트를 확인할 수 있습니다.  
 상단의 `watsonx Orchestrate`를 클릭합니다.
 
 ![alt text](images/image29.png)
