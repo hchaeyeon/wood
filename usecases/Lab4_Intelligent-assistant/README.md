@@ -17,4 +17,4 @@
 ![alt text](images/Intelligent%20Assistant%20Architecture.jpg)
 
 ## 📄 단계별 실습 지침
-단계별 지침은 [이 문서](./Intelligent%20AI%20Assistant_kr.md)에서 찾을 수 있습니다. 이 문서는 watsonx.ai와 watsonx Orchestrate를 사용하여 사용 사례를 구현하는 방법을 보여줍니다.
+단계별 지침은 [이 문서](Intelligent%20AI%20Assistant_kr.md)에서 찾을 수 있습니다. 이 문서는 watsonx.ai와 watsonx Orchestrate를 사용하여 사용 사례를 구현하는 방법을 보여줍니다.

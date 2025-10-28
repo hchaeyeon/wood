@@ -54,4 +54,4 @@ GFM 은행은 전통적이고 수동적인 은행 업무 프로세스에 의존�
 
 ## 📝 단계별 실습 지침
 
-이 사용 사례를 구현하는 방법에 대한 단계별 지침은 [실습 문서](/usecases/banking-backoffice/assets/hands_on_lab_banking_automation_kr.md)에서 찾을 수 있습니다.
+이 사용 사례를 구현하는 방법에 대한 단계별 지침은 [실습 문서](./assets/hands_on_lab_banking_automation_kr.md)에서 찾을 수 있습니다.
