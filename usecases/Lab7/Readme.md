@@ -36,7 +36,7 @@
      ```
       어떤 유형의 계좌를 개설 하시겠습니까?
      ```
-
+      ![alt text](./images/image045.png)
    - **Define customer response > Options** 을 선택합니다.   
       팝업창에서 Option을 당죄예금, 저축예금, 투자예금 3개를 추가 합니다.
       ![alt text](./images/image001.png)
@@ -65,7 +65,7 @@
      ```
       당신의 투자 번호가 무엇입니까?
      ```
-
+      ![alt text](./images/image046.png)   
    - **Define customer response > Number** 을 선택합니다.   
       ![alt text](./images/image007.png)   
       사용자로 부터 투자번호를 입력 받기 위한 작업을 진행 합니다.   
@@ -95,6 +95,7 @@
      ```
       귀하를 위해 새로운 투자 계좌를 개설할 수 있는 에이 전트에게 연결해 드리 겠습니다!
      ```
+      ![alt text](./images/image047.png)    
 
    - **And then > Continue to next step > Connect to agent** 을 선택합니다.   
       ![alt text](./images/image012.png)    
@@ -103,8 +104,8 @@
       - 에이전트에 보낼 메시지를 작성합니다. 아래 문구를 ```Message to agent(Optional)``` 에 입력합니다.
       ```
       고객이 원하는 투자 번호는
-      ![alt text](./images/image040.png)  
       ```
+      ![alt text](./images/image040.png)  
       - 고객으로 부터 받은 투자 번호를 전달하기 위해 설정합니다. ```$``` 문구를 통해 변수를 선택합니다.
       ![alt text](./images/image041.png)  
       - ```Actions step variables > 2.당신의 투자 번호가 무엇입니까?```를 선택하여 사용자로 부터 입력받은 ```투자번호```를 전달합니다.
