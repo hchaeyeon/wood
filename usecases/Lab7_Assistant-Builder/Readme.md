@@ -6,7 +6,7 @@
       ```
       새 당좌 예금 계좌를 개설하고 싶습니다
       ```
-### 2. Action 인식 문구 작성하기
+### 2. Action 인식 문구(Phrases) 작성하기
 **Customer starts with**를 선택합니다. Action 트리거 문구를 작성하는 창입니다. 사용자가 입력한 문구가 Action을 인식하는지 테스트 한후 인식하지 못하는 문구를 추가로 입력하여 사용자의 문구를 이해하는 훈련을 진행합니다.   
     - ```Preview```버튼을 클릭합니다.   
       ![alt text](./images/image034.png)     
