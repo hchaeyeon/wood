@@ -58,7 +58,7 @@
       - 명명규칙 : <자기이름>_AskHR
    - 이름 (예) : 
       ```
-      Juheon_AskHR
+      Hcy_AskHR
       ```
    - 설명 :
 
