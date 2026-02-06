@@ -5,7 +5,7 @@
       - 명명규칙 : <자기이름>_AskMkt
    - 이름 (예) : 
       ```
-      Juheon_AskMkt
+      Hcy_AskMkt
       ```
    - 설명 :
         ```
