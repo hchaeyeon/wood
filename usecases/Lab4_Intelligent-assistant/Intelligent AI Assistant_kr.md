@@ -71,7 +71,7 @@ watsonx Orchestrate와 대화하여 어떤 답변을 제공하는지 탐색해 �
 ![alt text](images/image4.png)
 
 
-### 1. Dock 상태 에이전트(Dock Status Agent)
+### Dock 상태 에이전트(Dock Status Agent)
 다음 화면에서 `Create agent`를 클릭합니다.
 
 ![alt text](images/image33.png)
