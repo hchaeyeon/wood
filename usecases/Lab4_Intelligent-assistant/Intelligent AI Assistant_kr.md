@@ -71,7 +71,7 @@ watsonx Orchestrate와 대화하여 어떤 답변을 제공하는지 탐색해 �
 ![alt text](images/image4.png)
 
 
-### Dock 상태 에이전트(Dock Status Agent)
+### 1. Dock 상태 에이전트(Dock Status Agent)
 다음 화면에서 `Create agent`를 클릭합니다.
 
 ![alt text](images/image33.png)
@@ -237,7 +237,7 @@ Dock Status Agent 옆에 초록색 "Live" 아이콘이 표시되면 성공적으
 
 
 
-### 잉여 재고 처리 에이전트(Surplus Agent)
+### 2. 잉여 재고 처리 에이전트(Surplus Agent)
 
 이 에이전트는 잉여 제품(surplus product) 처리 옵션을 분석하고, 처리 방법에 대한 추천을 제공합니다.  
 잉여 제품은 다양한 경로로 이동될 수 있으며, 각각 다른 비용이 발생합니다.  
@@ -342,7 +342,7 @@ Connections 리스트는 비워두고, `Deploy`를 다시 클릭합니다.
 ![alt text](images/image14.png)
 
 
-### 비서 에이전트(Secretary Agent)
+### 3. 비서 에이전트(Secretary Agent)
 
 이제 또 다른 에이전트를 만드는 것은 매우 쉬울 것입니다.  
 이번에는 이해관계자와의 커뮤니케이션을 처리하고, 잉여 제품 처리 관련 알림을 보내는 에이전트를 만듭니다.  
@@ -457,7 +457,7 @@ Generate a notification email for the marketing team for SKU: 8932464599 of 10 u
 
 ---
 
-### 교통 정보 에이전트(Traffic Agent)
+### 4. 교통 정보 에이전트(Traffic Agent)
 
 거의 다 왔습니다!  
 이 에이전트는 특정 위치의 최신 교통 정보를 가져와야 합니다. 이를 위해, Python 코드와 LangGraph 프레임워크를 사용하여 watsonx.ai에 배포된 에이전트에 작업을 위임합니다.  
@@ -466,7 +466,7 @@ Generate a notification email for the marketing team for SKU: 8932464599 of 10 u
 
 
 
-### 창고 관리자 에이전트(Warehouse Manager Agent) - Agentic AI Orchestration
+### 5. 창고 관리자 에이전트(Warehouse Manager Agent) - Agentic AI Orchestration
 
 이제 다른 모든 에이전트를 조율하고, 최종 사용자가 상호작용하는 에이전트를 생성할 준비가 되었습니다.  
 
