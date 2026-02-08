@@ -85,7 +85,7 @@ watsonx Orchestrate와 대화하여 어떤 답변을 제공하는지 탐색해 �
 - 명명규칙 : <자기이름>_DockStatusAgent
 - 이름 (예) : 
    ```
-   Juheon_DockStatusAgent
+   Hcy_DockStatusAgent
    ```
 - 설명 : "생성한 에이전트명" <- 자신이 만든 에이전트 명으로 변경 합니다.
 
@@ -114,9 +114,7 @@ AI 에이전트에서는 이 설명이 단순한 문서용이 아니라, 적절�
 에이전트가 사용할 LLM과 스타일도 지정할 수 있습니다.  
 이 에이전트(및 아래 다른 에이전트들)에서는 `GPT-OSS120B — OpenAI (via Groq)` 모델을 선택합니다.
 
-![alt text](images/image35.png)
-
-스타일은 `ReAct`를 선택합니다.
+스타일은 `Default`를 선택합니다.
 
 ![alt text](images/image36.png)
 
@@ -253,7 +251,7 @@ Dock Status Agent 옆에 초록색 "Live" 아이콘이 표시되면 성공적으
 - 명명규칙 : <자기이름>_SurplusAgent
 - 이름 (예) : 
    ```
-   Juheon_SurplusAgent
+   Hcy_SurplusAgent
    ```
 - 설명 : "생성한 에이전트명" <- 자신이 만든 에이전트 명으로 변경 합니다.
 ```
@@ -374,7 +372,7 @@ Connections 리스트는 비워두고, `Deploy`를 다시 클릭합니다.
 - 명명규칙 : <자기이름>_SecretaryAgent
 - 이름 (예) : 
    ```
-   Juheon_SecretaryAgent
+   Hcy_SecretaryAgent
    ```
 - 설명 : "생성한 에이전트명" <- 자신이 만든 에이전트 명으로 변경 합니다.
     ```
@@ -482,7 +480,7 @@ Generate a notification email for the marketing team for SKU: 8932464599 of 10 u
 - 명명규칙 : <자기이름>_AskWarehouseManager
 - 이름 (예) : 
    ```
-   Juheon_AskWarehouseManager
+   Hcy_AskWarehouseManager
    ```
 - 설명 : "생성한 에이전트명" <- 자신이 만든 에이전트 명으로 변경 합니다.
     ```
@@ -534,7 +532,7 @@ Generate a notification email for the marketing team for SKU: 8932464599 of 10 u
     - 명명규칙 : <자기이름>_TrafficAgent
   - Display name (예) : (공백 불가)
     ```
-    Juheon_TrafficAgent
+    Hcy_TrafficAgent
     ```
   - 설(Description of agent capabilities) : "생성한 에이전트명" <- 자신이 만든 에이전트 명으로 변경 합니다.
     ```
@@ -552,16 +550,16 @@ Generate a notification email for the marketing team for SKU: 8932464599 of 10 u
 **주의사항** : 명명규칙
 - 명명규칙에 기반하여 만든 자신의 에이전트를 사용하여 지침을 작성합니다.
 - 명명규칙 (예) : 
-    - Juheon_DockStatusAgent
-    - Juheon_SurplusAgent
-    - Juheon_SecretaryAgent
-    - Juheon_TrafficAgent
+    - Hcy_DockStatusAgent
+    - Hcy_SurplusAgent
+    - Hcy_SecretaryAgent
+    - Hcy_TrafficAgent
 ```
 Reasoning:
-- Use the Juheon_DockStatusAgent for tasks related to dock status.
-- Use the Juheon_SurplusAgent for tasks related to surplus.
-- Use the Juheon_SecretaryAgent for drafting of emails.
-- Use the Juheon_TrafficAgent to find traffic information about a location.
+- Use the Hcy_DockStatusAgent for tasks related to dock status.
+- Use the Hcy_SurplusAgent for tasks related to surplus.
+- Use the Hcy_SecretaryAgent for drafting of emails.
+- Use the Hcy_TrafficAgent to find traffic information about a location.
 ```
 
 
