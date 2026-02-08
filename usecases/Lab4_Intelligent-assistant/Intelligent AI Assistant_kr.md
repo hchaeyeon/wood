@@ -9,7 +9,7 @@
   - [watsonx Orchestrate](#watsonx-orchestrate)
     - [watsonx Orchestrate 콘솔](#watsonx-orchestrate-콘솔)
     - [AI 에이전트 구성](#ai-에이전트-구성)
-    - [1. Dock 상태 에이전트(Dock Status Agent)](#dock-상태-에이전트dock-status-agent)
+    - [Dock 상태 에이전트(Dock Status Agent)](#dock-상태-에이전트dock-status-agent)
     - 2.[잉여 재고 처리 에이전트(Surplus Agent)](#잉여-재고-처리-에이전트surplus-agent)
     - 3.[비서 에이전트(Secretary Agent)](#비서-에이전트secretary-agent)
     - 4.[교통 정보 에이전트(Traffic Agent)](#교통-정보-에이전트traffic-agent)
