@@ -223,11 +223,9 @@ John Garcia
 
 다음을 테스트 합니다.
 ```
-I'd like to update my title. 
+I'd like to update my title to Sr AI Engineer
 ```
-```
-Sr AI Engineer
-```
+
 <img width="1000" alt="image" src="hands-on-lab-assets/hr_step13_2.png">
 
 ```
