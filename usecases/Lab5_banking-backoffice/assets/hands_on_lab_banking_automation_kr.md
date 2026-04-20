@@ -20,7 +20,7 @@
 - [GFM 상품 정보 에이전트(예:Hcy_ProductInformationAgent)](#gfm-상품-정보-agent-예Hcy_productinformationagent)
   - [GFM 상품 정보 에이전트 생성](#gfm-상품-정보-에이전트-생성)
   - [GFM 상품 정보 에이전트 테스트 및 배포](#gfm-product-information-agent-테스트-및-배포)
-- [GFM 은행 오케스트레이터 에이전트(예:Juheon_AskGFMBank)](#gfm-bank-orchestrator-agent-예juheon_askgfmbank)
+- [GFM 은행 오케스트레이터 에이전트(예:Hcy_AskGFMBank)](#gfm-bank-orchestrator-agent-예Hcy_askgfmbank)
   - [GFM 은행 오케스트레이터 에이전트 생성](#gfm-bank-orchestrator-agent-생성)
   - [협업 에이전트 추가](#협업-에이전트-추가)
   - [GFM 은행 오케스트레이터 에이전트 테스트 및 배포](#gfm-bank-orchestrator-agent-테스트-및-배포)
@@ -125,7 +125,7 @@ AI 기반 시스템에서는:
 
   ![Agent Builder](./images/i3.png)
 
-### GFM 백오피스 에이전트(예:Juheon_BackOfficeAgent)
+### GFM 백오피스 에이전트(예:Hcy_BackOfficeAgent)
 
 이 에이전트는 GFM Bank의 특수 은행 업무를 처리하며, 당좌 대월 승인이나 수수료 환불 처리와 같이 높은 권한이 필요한 작업을 수행합니다. GFM Bank 운영 센터에서 운영됩니다.
 
