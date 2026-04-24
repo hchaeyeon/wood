@@ -144,7 +144,7 @@ AI 기반 시스템에서는:
     - 명명규칙 : <자기이름>_BackOfficeAgent
     - 이름 (예) : 
       ```
-      Juheon_BackOfficeAgent
+      Hcy_BackOfficeAgent
       ```
   - **설명(Description)** 
     ```
@@ -240,7 +240,7 @@ AI 기반 시스템에서는:
 
 
 
-### GFM 텔러 에이전트(예:Juheon_TellerAgent)
+### GFM 텔러 에이전트(예:Hcy_TellerAgent)
 
 이 에이전트는 고객의 일상적인 은행 업무(잔액 조회, 송금 등)를 지원합니다. 요청된 사항에 대해서만 응답하며, 가정이나 사전 행동은 수행하지 않습니다.
 
@@ -262,7 +262,7 @@ AI 기반 시스템에서는:
     - 명명규칙 : <자기이름>_TellerAgent
     - 이름 (예) : 
       ```
-      Juheon_TellerAgent
+      Hcy_TellerAgent
       ```
   - **설명(Description)** 
     ```
@@ -285,7 +285,7 @@ AI 기반 시스템에서는:
  
   ![Create agent](./teller_ag_imgs/i5.png)
 
-- `자신이 만든 Teller 에이전트 (예:Juheon_TellerAgent)` 페이지에서, 화면 상단 중앙의 드롭다운 메뉴에서 "llama-3-405b-instruct" 모델을 선택합니다.
+- `자신이 만든 Teller 에이전트 (예:Hcy_TellerAgent)` 페이지에서, 화면 상단 중앙의 드롭다운 메뉴에서 "llama-3-405b-instruct" 모델을 선택합니다.
 
   ![Select model](./teller_ag_imgs/i20.png)
 
@@ -323,7 +323,7 @@ AI 기반 시스템에서는:
 
   ![Uploaded tools](./teller_ag_imgs/i17.png)
 
-- **자신이 만든 에이전트(예:Juheon_BackOfficeAgent)** 선택 후 **Add to Agent** 버튼 클릭
+- **자신이 만든 에이전트(예:Hcy_BackOfficeAgent)** 선택 후 **Add to Agent** 버튼 클릭
 
   ![Uploaded tools](./teller_ag_imgs/i18.png)
 
@@ -398,7 +398,7 @@ What is the balance of my account IBAN DE89320895326389021994
 
 
 
-### GFM 상품 정보 Agent (예:Juheon_ProductInformationAgent)
+### GFM 상품 정보 Agent (예:Hcy_ProductInformationAgent)
 
 이 에이전트는 GFM 은행에서 제공하는 모든 금융 상품과 서비스에 대한 신뢰할 수 있는 전문가 역할을 합니다.  
 고객이 제공되는 금융 솔루션을 명확하고 정확하게 탐색하고 이해할 수 있도록 도와줍니다.
@@ -423,7 +423,7 @@ What is the balance of my account IBAN DE89320895326389021994
     - 명명규칙 : <자기이름>_ProductInformationAgent
     - 이름 (예) : 
       ```
-      Juheon_ProductInformationAgent
+      Hcy_ProductInformationAgent
       ```
   - **설명(Description)** 
     ```
@@ -441,7 +441,7 @@ What is the balance of my account IBAN DE89320895326389021994
   - **Create** 클릭
   ![Prod Agent Description](./prod_info_ag_imgs/i2.png)
 
-- `자신이 만든에이전트(예:Juheon_ProductInformationAgent)` 페이지에서 상단 중앙 드롭다운 메뉴에서 "llama-3-405b-instruct" 모델 선택
+- `자신이 만든에이전트(예:Hcy_ProductInformationAgent)` 페이지에서 상단 중앙 드롭다운 메뉴에서 "llama-3-405b-instruct" 모델 선택
 
   ![Select model](./prod_info_ag_imgs/i14.png)
 
@@ -602,7 +602,7 @@ What is the balance of my account IBAN DE89320895326389021994
 
 
 
-### GFM Bank Orchestrator Agent (예:Juheon_AskGFMBank)
+### GFM Bank Orchestrator Agent (예:Hcy_AskGFMBank)
 
 이 에이전트는 GFM Bank의 가상 프런트 데스크 역할을 수행하며, 고객을 환영하고 요구사항을 파악하며, 원활하고 전문적인 경험을 위해 적절한 전문가와 연결합니다.
 
@@ -624,7 +624,7 @@ What is the balance of my account IBAN DE89320895326389021994
     - 명명규칙 : <자기이름>_AskGFMBank
     - 이름 (예) : 
       ```
-      Juheon_AskGFMBank
+      Hcy_AskGFMBank
       ```
   - **설명(Description)** 
     ```
@@ -685,7 +685,7 @@ What is the balance of my account IBAN DE89320895326389021994
   - 클릭 **Create**
   ![Agent Description](./bank_orch_ag_imgs/i2.png)
 
-- `자신이 만든 에이전트(예:Juheon_AskGFMBank)` 페이지 상단 중앙의 드롭다운 메뉴에서 "llama-3-405b-instruct" 모델을 선택합니다.
+- `자신이 만든 에이전트(예:Hcy_AskGFMBank)` 페이지 상단 중앙의 드롭다운 메뉴에서 "llama-3-405b-instruct" 모델을 선택합니다.
 
   ![Select model](./bank_orch_ag_imgs/i15.png)
 
@@ -702,13 +702,13 @@ What is the balance of my account IBAN DE89320895326389021994
 
   ![Local Instance](./bank_orch_ag_imgs/i4.png)
 
-- **자신이 만든 에이전트(예: Juheon_TellerAgent 와 Juheon_ProductInformationAgent)**를 선택한 후 **Add to Agent** 버튼을 클릭합니다.
+- **자신이 만든 에이전트(예: Hcy_TellerAgent 와 Hcy_ProductInformationAgent)**를 선택한 후 **Add to Agent** 버튼을 클릭합니다.
 
   ![Select Agents](./bank_orch_ag_imgs/i12.png)
   ![Add to Agent](./bank_orch_ag_imgs/i13.png)
 
 - **Behavior** 섹션에서 **Instructions**에 다음 내용을 추가합니다.   
-  - **주의사항** : 본인이 만든 에이전트 명으로 변경해 주세요.(예:Juheon_TellerAgent, Juheon_ProductInformationAgent, Juheon_BackOfficeAgent )
+  - **주의사항** : 본인이 만든 에이전트 명으로 변경해 주세요.(예:Hcy_TellerAgent, Hcy_ProductInformationAgent, Hcy_BackOfficeAgent )
   ```text
   응답 지침:  
   - 은행 가상 지점에서 모든 초기 고객 문의에 응답한다.  
@@ -726,17 +726,17 @@ What is the balance of my account IBAN DE89320895326389021994
 
   응답 패턴:  
 
-  계좌 운영(텔러 서비스, Juheon_TellerAgent):  
+  계좌 운영(텔러 서비스, Hcy_TellerAgent):  
   - 고객이 잔액, 이체, 거래를 언급하면 즉시 텔러 요청으로 인식한다.  
   - 응답: "해당 [특정 은행 업무]를 도와드리기 위해 텔러 서비스로 연결해드리겠습니다."  
   - 주요 트리거: "잔액," "이체," "거래," "송금," "내 계좌 확인"  
 
-  특수 운영(백오피스 서비스, Juheon_BackOfficeAgent):  
+  특수 운영(백오피스 서비스, Hcy_BackOfficeAgent):  
   - 고객이 당좌대월, 수수료 취소, 특별 예외를 언급하면 백오피스 요청으로 인식한다.  
   - 응답: "고객님의 [당좌대월/수수료 취소] 요청은 백오피스 팀으로 연결해드리겠습니다."  
   - 주요 트리거: "당좌대월," "수수료 취소," "환불," "이의 제기," "특별 승인"  
 
-  상품 정보(은행 상품 서비스, Juheon_ProductInformationAgent):  
+  상품 정보(은행 상품 서비스, Hcy_ProductInformationAgent):  
   - 고객이 은행 상품, 금리, 신규 서비스에 대해 문의하면 상품 전문 상담원으로 연결한다.  
   - 응답: "고객님의 [특정 상품/서비스]에 대한 정보를 제공할 수 있는 은행 상품 전문 상담원으로 연결해드리겠습니다."  
   - 주요 트리거: "신규 계좌," "금리," "대출," "신용카드," "주택담보대출," "투자 옵션"  
@@ -791,7 +791,7 @@ What is the balance of my account IBAN DE89320895326389021994
 ## Agentic AI Banking 솔루션 테스트
 
 - **watsonx Orchestrate** 창의 좌측 상단 햄버거 아이콘을 클릭하고 **Chat**을 선택합니다.  
-  오른쪽 상단에서 "자기가 만든 에이전트(예:Juheon_AskGFMBank)" 만 표시되는 것을 확인합니다.
+  오른쪽 상단에서 "자기가 만든 에이전트(예:Hcy_AskGFMBank)" 만 표시되는 것을 확인합니다.
 
   ![Select Orchestrator Agent](./bank_orch_ag_imgs/i9.png)
 
