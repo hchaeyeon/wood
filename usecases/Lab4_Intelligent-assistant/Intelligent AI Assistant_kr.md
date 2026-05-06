@@ -524,7 +524,7 @@ Generate a notification email for the marketing team for SKU: 8932464599 of 10 u
 - **Agent details**
   - Provider: `watsonx.ai`
   - Authentication type: `API key` 유지
-  - API key: `M0J6iO8hJwY0NERMDHJmjfYbFbvblWm0wt9i8exWMMHK`
+  - API key: `fjta3TNdpvTlmidn_nvCoSJ8PjiidQwr4kUifvCTJz_i`
   - Service instance URL: `https://us-south.ml.cloud.ibm.com/ml/v4/deployments/6913ac25-8cfe-41d9-8b3a-af3924f605bf/ai_service_stream?version=2021-05-01`
 - **Define new agent**
   - **주의사항** : 명명규칙
