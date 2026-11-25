@@ -63,7 +63,7 @@
    - 설명 :
 
       ```
-      You are an agent who handles employee HR queries.  You provide short and crisp responses, keeping the output to 200 words or less.  You can help users check their profile data, retrieve latest time off balance, update title or address, and request time off. You can also answer general questions about company benefits.
+      당신은 직원의 HR 관련 문의를 처리하는 에이전트입니다. 응답은 200단어 이내로 짧고 명확하게 작성합니다. 사용자가 자신의 프로필 정보 확인, 최신 휴가 잔여일수 조회, 직함 또는 주소 변경, 휴가 신청을 할 수 있도록 도와줍니다. 또한 회사 복리후생에 관한 일반적인 질문에도 답변할 수 있습니다.
       ```  
    - **좋은 설명(Description)이란 무엇인가?**  
       설명은 에이전트의 범위를 개략적으로 제시하지만, 에이전트의 실제 동작 방식에는 영향을 주지 않는다.
@@ -115,7 +115,7 @@
 1. 다음 설명을 **설명** 섹션에 복사한 다음 **저장**을 클릭합니다:
 
    ```
-   This knowledge base addresses the company's employee benefits, including parental leaves, pet policy, flexible work arrangements, and student loan repayment.
+   이 지식 베이스는 육아휴직, 반려동물 정책, 유연근무제, 학자금 대출 상환 지원 등 회사의 직원 복리후생에 관한 내용을 다룹니다.
    ```
    - **설명(Descriptions) 이해하기**  
       에이전트의 지식 베이스에 문서를 업로드할 때는 명확하고 유익한 설명을 포함하세요. 이렇게 하면 에이전트가 데이터를 이해하고 해석하는 데 도움이 되며, 응답 시 해당 지식을 활용할지 아니면 툴 호출이나 대규모 언어 모델(LLM) 사용과 같은 다른 방법에 의존할지를 결정할 수 있습니다.
@@ -156,13 +156,13 @@
 1. **동작(Behavior)** 섹션으로 스크롤을 내립니다. 아래 지침을 **지침(Instructions)** 필드에 삽입합니다:
 
    ```
-   Use your knowledge base to answer general questions about employee benefits. 
+   직원 복리후생에 관한 일반적인 질문에는 지식 베이스를 사용하여 답변합니다.
 
-   Use the tools to get or update user specific information.
+   사용자별 정보를 조회하거나 변경할 때는 도구를 사용합니다.
 
-   When user asks to show profile data or check time off balance or update title/address or request time off for the very first time,  first ask the user for their name,  then invoke the tool and then use the same name in the whole session without asking for the name again.
+   사용자가 처음으로 프로필 정보 조회, 휴가 잔여일수 확인, 직함/주소 변경, 휴가 신청을 요청하면 먼저 사용자의 이름을 물어본 다음 도구를 호출합니다. 이후 세션 전체에서는 이름을 다시 묻지 말고 같은 이름을 사용합니다.
 
-   When the user requests time off, convert the dates to YYYY-MM-DD format, e.g. 5/22/2025 should be converted to 2025-05-22 before passing the date to the post_request_time_off tool.
+   사용자가 휴가를 신청하면 날짜를 YYYY-MM-DD 형식으로 변환한 뒤 post_request_time_off 도구에 전달합니다. 예: 5/22/2025는 2025-05-22로 변환합니다.
    ```
    - **동작(Behavior) 이해하기**  
       AI 에이전트의 동작은 사용자의 요청과 상황에 어떻게 반응하는지를 정의합니다.
@@ -188,12 +188,12 @@
 오른쪽 미리보기 채팅에서 다음 질문을 하여 에이전트를 테스트하고 응답을 확인합니다. 아래 스크린샷에 표시된 것과 유사해야 합니다:
 
 ```
-What is the pet policy? 
+반려동물 정책은 무엇인가요?
 ```
 <img width="1000" alt="image" src="hands-on-lab-assets/hr_step13.png">
 
 ```
-Show me my profile data.
+내 프로필 정보를 보여주세요.
 ```
 이름은 다음 목록중 하나를 선택해서 사용하시면 됩니다.
 ```
@@ -223,28 +223,28 @@ John Garcia
 
 다음을 테스트 합니다.
 ```
-I'd like to update my title to Sr AI Engineer
+내 직함을 Sr AI Engineer로 변경하고 싶어요.
 ```
 
 <img width="1000" alt="image" src="hands-on-lab-assets/hr_step13_2.png">
 
 ```
-Update my address
+내 주소를 변경해 주세요.
 ```
 ```
 222 Main St, San Francisco, CA 94105
 ```
 ```
-What is my time off balance?
+내 휴가 잔여일수는 얼마인가요?
 ```
 <img width="1000" alt="image" src="hands-on-lab-assets/hr_step13_3.png">
 
 ```
-Request time off
+휴가를 신청하고 싶어요.
 ```
 
 ```
-Show my profile data.
+내 프로필 정보를 다시 보여주세요.
 ```
 <img width="1000" alt="image" src="hands-on-lab-assets/hr_step13_4.png">
 
