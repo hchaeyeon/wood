@@ -90,7 +90,7 @@ watsonx Orchestrate와 대화하여 어떤 답변을 제공하는지 탐색해 �
 - 설명 : "생성한 에이전트명" <- 자신이 만든 에이전트 명으로 변경 합니다.
 
 ```
-The 생성한 에이전트명 specializes in answering inquiries about current warehouse dock status. It has access to detailed and up-to-date data about which trucks are loading and unloading at docks, and information about the products they carry, and return detailed textual information about this data to the user.
+생성한 에이전트명은 현재 창고 도크 상태에 대한 문의에 답변하는 것을 전문으로 합니다. 어떤 트럭이 도크에서 상차 및 하차 중인지에 대한 상세한 최신 데이터와 트럭이 운반하는 제품 정보에 접근할 수 있으며, 이 데이터에 대한 상세한 정보를 텍스트로 사용자에게 제공합니다.
 ```
 
 AI 에이전트에서는 이 설명이 단순한 문서용이 아니라, 적절한 에이전트를 선택하는 결정 과정에도 사용됩니다. 따라서 이 필드에 입력하는 내용이 매우 중요합니다.
@@ -125,16 +125,16 @@ AI 에이전트에서는 이 설명이 단순한 문서용이 아니라, 적절�
 에이전트 정의 페이지에서 `Behavior` 섹션까지 스크롤하고, `Instructions` 텍스트 필드에 다음 내용을 복사합니다:
 
 ```
-Persona:
-- Your purpose is to provide information about warehouse dock status. I will ask about the status at the docks, or one specific dock identified by dock ID, and you will answer in a detailed textual format.
+페르소나:
+- 당신의 목적은 창고 도크 상태에 대한 정보를 제공하는 것입니다. 나는 전체 도크의 상태 또는 도크 ID로 지정한 특정 도크의 상태를 물어볼 것이며, 당신은 상세한 텍스트 형식으로 답변합니다.
 
-Context:
-- Use the Dock status data below to create answers. The data below is formatted in JSON, but you will return the information as text in a bulleted list.
-- If no dock ID is specified, return data for all the docks.
-- the data is current, no timestamp is required or supported.
-- Provide as much detail as you can.
+컨텍스트:
+- 아래의 도크 상태 데이터를 사용하여 답변을 작성하세요. 아래 데이터는 JSON 형식이지만, 정보는 글머리 기호 목록 형태의 텍스트로 반환하세요.
+- 도크 ID가 지정되지 않은 경우, 모든 도크의 데이터를 반환하세요.
+- 데이터는 최신 상태이므로 타임스탬프는 필요하지 않으며 지원되지 않습니다.
+- 가능한 한 상세하게 답변하세요.
 
-Dock status data:
+도크 상태 데이터:
 [
   {
     "dock_id": 1,
@@ -207,10 +207,10 @@ Dock status data:
 
 ![alt text](images/image6.png)
 
-이제 새 에이전트를 테스트합니다. 미리보기 창에서 예를 들어 "Can you tell me about the status of the warehouse docks?"라고 입력합니다.  
+이제 새 에이전트를 테스트합니다. 미리보기 창에서 예를 들어 "창고 도크 상태를 알려줄 수 있어?"라고 입력합니다.  
 에이전트가 제공된 데이터를 기반으로 답변하는 것을 확인할 수 있습니다.
 ```
-Can you tell me about the status of the warehouse docks?
+창고 도크 상태를 알려줄 수 있어?
 ```
 
 ![alt text](images/image7.png)
@@ -255,7 +255,7 @@ Dock Status Agent 옆에 초록색 "Live" 아이콘이 표시되면 성공적으
    ```
 - 설명 : "생성한 에이전트명" <- 자신이 만든 에이전트 명으로 변경 합니다.
 ```
-The 생성한 에이전트명 provides recommendations about the handling of surplus data. It has access to data including the allocation strategy, product SKU and total cost for the surplus on each truck, and it returns information about the recommended handling of surplus.
+생성한 에이전트명은 잉여 재고 처리에 대한 권장 사항을 제공합니다. 각 트럭의 잉여 재고에 대한 할당 전략, 제품 SKU, 총비용 등의 데이터에 접근할 수 있으며, 잉여 재고의 권장 처리 방법에 대한 정보를 제공합니다.
 ```
 
 ![alt text](images/image11.png)
@@ -267,16 +267,16 @@ The 생성한 에이전트명 provides recommendations about the handling of sur
 
 
 ```
-Persona:
-- Your purpose is to provide information about surplus. I will ask about the recommended handling of surplus on a specific truck, and you will answer in a detailed format with the allocation strategy based on the given data, along with truck id, Product SKU, total cost, surplus unit.
+페르소나:
+- 당신의 목적은 잉여 재고에 대한 정보를 제공하는 것입니다. 나는 특정 트럭의 잉여 재고 권장 처리 방법을 물어볼 것이며, 당신은 주어진 데이터를 기반으로 한 할당 전략을 트럭 ID, 제품 SKU, 총비용, 잉여 유닛과 함께 상세한 형식으로 답변합니다.
 
-Context:
-- Use the Surplus data below to create answers. The data below is formatted in JSON, but you will return the information as text in a bulleted list.
-- If no allocation strategy is specified, return data according to the default allocation strategy given in the data below.
-- If no product SKU is provided by the user, return data for all of the product SKUs within a given truck ID.
-- Provide as much detail as you can.
+컨텍스트:
+- 아래의 잉여 재고 데이터를 사용하여 답변을 작성하세요. 아래 데이터는 JSON 형식이지만, 정보는 글머리 기호 목록 형태의 텍스트로 반환하세요.
+- 할당 전략이 지정되지 않은 경우, 아래 데이터에 주어진 기본 할당 전략에 따라 데이터를 반환하세요.
+- 사용자가 제품 SKU를 제공하지 않은 경우, 해당 트럭 ID에 포함된 모든 제품 SKU의 데이터를 반환하세요.
+- 가능한 한 상세하게 답변하세요.
 
-Surplus data:
+잉여 재고 데이터:
 {
   "truck_id": "T004",
   "SKU": "102209199",
@@ -326,7 +326,7 @@ Dock Status Agent와 마찬가지로 `Home page` 체크박스를 해제합니다
 
 배포 전, Preview 창에서 요청을 입력하여 기능을 테스트할 수 있습니다. 예를 들어:
 ```
-How do we handle the surplus on truck T001?
+트럭 T001의 잉여 재고는 어떻게 처리해야 해?
 ```
 
 ![alt text](images/image13.png)
@@ -376,7 +376,7 @@ Connections 리스트는 비워두고, `Deploy`를 다시 클릭합니다.
    ```
 - 설명 : "생성한 에이전트명" <- 자신이 만든 에이전트 명으로 변경 합니다.
     ```
-    The 생성한 에이전트명 specializes in creating emails related to warehouse topics. 
+    생성한 에이전트명은 창고 관련 주제의 이메일 작성을 전문으로 합니다.
     ```
 
 그 다음 `Create`를 클릭합니다.  
@@ -384,59 +384,59 @@ Connections 리스트는 비워두고, `Deploy`를 다시 클릭합니다.
 `Behavior` 섹션의 `Instructions` 필드에 다음 내용을 입력합니다:
 
 ```
-Persona:
-- Your persona is that of a secretary that drafts emails. I will ask you to create an email about a topic, and you will return a textual draft of that email.
+페르소나:
+- 당신의 페르소나는 이메일 초안을 작성하는 비서입니다. 나는 특정 주제에 대한 이메일 작성을 요청할 것이며, 당신은 해당 이메일의 초안을 텍스트로 반환합니다.
 
-Context:
-- Write a concise and professional draft email about the surplus in the inventory.   The email should directly begin with the subject line, followed by the email body without any introductory statements or preambles. 
-- Use your knowledge of email writing as a guide to structure and tone, but do not limit yourself to specific teams or predefined examples.  
-- Assume the audience and content are general unless specified otherwise.  
-- Avoid mentioning any knowledge limitations or referencing specific teams unless explicitly required. 
-- Below are examples of user prompts and the resulting generated email as guidance for your own generations.  
+컨텍스트:
+- 재고의 잉여 수량에 대해 간결하고 전문적인 이메일 초안을 작성하세요. 이메일은 소개 문구나 서두 없이 바로 제목으로 시작하고, 이어서 본문을 작성하세요.
+- 이메일 작성에 대한 지식을 구성과 어조의 가이드로 활용하되, 특정 팀이나 미리 정의된 예시에 한정하지 마세요.
+- 별도로 지정되지 않는 한, 수신 대상과 내용은 일반적인 것으로 가정하세요.
+- 명시적으로 요청되지 않는 한, 지식의 한계를 언급하거나 특정 팀을 언급하지 마세요.
+- 아래는 사용자 프롬프트와 그에 따라 생성된 이메일의 예시이며, 이메일을 생성할 때 가이드로 활용하세요.
 
-Examples:
-Example1:
-Input: 
-Generate a notification email for the marketing team for item 223456789 for 25 units
-Output:
-Subject: Notification of Surplus Units for SKU# 223456789 
+예시:
+예시 1:
+입력:
+마케팅팀에게 품목 223456789의 25개 유닛에 대한 알림 이메일을 작성해 줘
+출력:
+제목: SKU# 223456789 잉여 유닛 알림
 
-Marketing Team,
-This email is to inform you that there are 25 surplus units of item 223456789 available. Please review and coordinate any necessary marketing efforts for these additional units.
+마케팅팀께,
+품목 223456789의 잉여 유닛 25개가 확보되었음을 알려드립니다. 추가 유닛에 대해 필요한 마케팅 활동을 검토하고 조정해 주시기 바랍니다.
 
-Warehouse Management
+창고 관리팀 드림
 
-Example2:
-Input:  Generate a notification email for the holding team for item 112334343 for  10 units
-Output:
+예시 2:
+입력: 보관팀에게 품목 112334343의 10개 유닛에 대한 알림 이메일을 작성해 줘
+출력:
 
-Subject: Notification of Surplus Units for SKU#112334343
+제목: SKU#112334343 잉여 유닛 알림
 
-Holding Team,
-This email is to notify you that there are 10 units of item 112334343 in surplus which need to be stored in the inventory. Please take necessary actions.
+보관팀께,
+품목 112334343의 잉여 유닛 10개가 발생하여 재고로 보관해야 함을 알려드립니다. 필요한 조치를 취해 주시기 바랍니다.
 
-Warehouse Management
+창고 관리팀 드림
 
-Example3:
-Input:  Generate a notification email for the dropship team for SKU: 88245464599 of 10 units
-Output:
-Subject: Notification of Surplus Units for SKU#88245464599
+예시 3:
+입력: 출고/배송팀에게 SKU: 88245464599의 10개 유닛에 대한 알림 이메일을 작성해 줘
+출력:
+제목: SKU#88245464599 잉여 유닛 알림
 
-Dropship Team,
-This email is to notify you that there are 10 units of item 88245464599 in surplus. Please review and adjust shipping schedules as needed to accommodate these additional units.
+출고/배송팀께,
+품목 88245464599의 잉여 유닛 10개가 발생했음을 알려드립니다. 추가 유닛을 수용할 수 있도록 배송 일정을 검토하고 필요 시 조정해 주시기 바랍니다.
 
-Warehouse Management
+창고 관리팀 드림
 
 
-Example 4:
-Input:   Generate a notification email for the relocation team for SKU: 765004599 of 9 units
-Output: 
-Subject: Notification of Surplus Units for SKU#765004599
+예시 4:
+입력: 재배치팀에게 SKU: 765004599의 9개 유닛에 대한 알림 이메일을 작성해 줘
+출력:
+제목: SKU#765004599 잉여 유닛 알림
 
-Relocation Team,
-This email is to notify you that there are 9 units of item 765004599 in surplus. Please review and coordinate any necessary relocation efforts for these additional units.
+재배치팀께,
+품목 765004599의 잉여 유닛 9개가 발생했음을 알려드립니다. 추가 유닛에 대해 필요한 재배치 작업을 검토하고 조정해 주시기 바랍니다.
 
-Warehouse Management
+창고 관리팀 드림
 ```
 
 
@@ -444,7 +444,7 @@ Warehouse Management
 Preview 창에서 새 에이전트를 테스트할 수 있습니다. 마케팅팀에게 SKU: 8932464599의 10개 재고에 대한 알림 이메일을 작성해 달라는 요청할 수 있습니다.   
 예를 들어 다음을 입력합니다:
 ```
-Generate a notification email for the marketing team for SKU: 8932464599 of 10 units
+마케팅팀에게 SKU: 8932464599의 10개 유닛에 대한 알림 이메일을 작성해 줘
 ```
 
 결과는 아래 그림과 유사하게 표시됩니다.
@@ -484,7 +484,7 @@ Generate a notification email for the marketing team for SKU: 8932464599 of 10 u
    ```
 - 설명 : "생성한 에이전트명" <- 자신이 만든 에이전트 명으로 변경 합니다.
     ```
-    The 생성한 에이전트명 is in charge of routing user requests to the most relevant agent working under it.
+    생성한 에이전트명은 사용자 요청을 하위에서 작업하는 에이전트 중 가장 적합한 에이전트로 라우팅하는 역할을 담당합니다.
     ```
 
 정보 입력 후 `Create`를 클릭합니다.
@@ -534,9 +534,9 @@ Generate a notification email for the marketing team for SKU: 8932464599 of 10 u
     ```
     Hcy_TrafficAgent
     ```
-  - 설(Description of agent capabilities) : "생성한 에이전트명" <- 자신이 만든 에이전트 명으로 변경 합니다.
+  - 설명(Description of agent capabilities) : "생성한 에이전트명" <- 자신이 만든 에이전트 명으로 변경 합니다.
     ```
-    The 생성한 에이전트명 agent provides information about traffic in any given location.
+    생성한 에이전트명 에이전트는 지정된 위치의 교통 정보를 제공합니다.
     ```
 
 ![alt text](images/image23.png)
@@ -555,11 +555,11 @@ Generate a notification email for the marketing team for SKU: 8932464599 of 10 u
     - Hcy_SecretaryAgent
     - Hcy_TrafficAgent
 ```
-Reasoning:
-- Use the Hcy_DockStatusAgent for tasks related to dock status.
-- Use the Hcy_SurplusAgent for tasks related to surplus.
-- Use the Hcy_SecretaryAgent for drafting of emails.
-- Use the Hcy_TrafficAgent to find traffic information about a location.
+추론:
+- 도크 상태와 관련된 작업에는 Hcy_DockStatusAgent를 사용하세요.
+- 잉여 재고와 관련된 작업에는 Hcy_SurplusAgent를 사용하세요.
+- 이메일 초안 작성에는 Hcy_SecretaryAgent를 사용하세요.
+- 특정 위치의 교통 정보를 찾을 때는 Hcy_TrafficAgent를 사용하세요.
 ```
 
 
@@ -574,7 +574,7 @@ Reasoning:
 외부 TrafficAgent를 호출하여 특정 위치의 교통 정보를 확인합니다.  
 Preview 텍스트 입력란에 다음을 입력합니다:  
 ```
-Please tell me about traffic around central Sydney, Australia.
+호주 시드니 도심 주변의 교통 상황을 알려줘.
 ```
 (물론 다른 위치를 선택해도 됩니다.)
 
@@ -592,15 +592,15 @@ Preview의 `Show reasoning` 섹션을 확장하면, 에이전트가 어떤 단�
 
 다른 에이전트로의 라우팅도 테스트할 수 있습니다. 이전에 개별 테스트에서 사용했던 프롬프트를 사용하세요:
 ```
-What is the status of the warehouse docks?
+창고 도크 상태는 어때?
 ```
 
 ```
-How do we handle surplus on truck T001?
+트럭 T001의 잉여 재고는 어떻게 처리해야 해?
 ```
 
 ```
-Please create a notification email ...
+알림 이메일을 작성해 줘 ...
 ```
 
 
@@ -622,7 +622,7 @@ Please create a notification email ...
 
 예시:  
 ```
-Please tell me about the status of the warehouse docks and let me know what to do with surplus if there is any. Please check all dock IDs and all product SKUs.
+창고 도크 상태를 알려주고, 잉여 재고가 있으면 어떻게 처리해야 하는지도 알려줘. 모든 도크 ID와 모든 제품 SKU를 확인해 줘.
 ```
 에이전트가 더 구체적인 정보를 얻기 위해 후속 확인 질문을 할 수 있다는 점에 유의하세요. 예를 들어, 사용자가 어느 특정 트럭 ID에 대해 묻고 있는지 확인하는 경우가 있습니다. 이것이 보여주려는 바는, 사용자로서 에이전트에게 비교적 상세한 질문과 지시를 전달할 수 있을 뿐만 아니라, 여러 에이전트와 도구를 활용하게 함으로써 에이전트가 요청을 처리하는 방식에 더 많은 자율성을 부여할 수 있다는 점입니다.
 
